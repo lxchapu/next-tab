@@ -1,0 +1,10 @@
+.wallpaper {
+  position: absolute;
+  inset: 0;
+  background-image: url('/bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-color: theme(colors.gray.200);
+}
