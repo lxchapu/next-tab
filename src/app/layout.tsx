@@ -1,13 +1,9 @@
-import 'sanitize.css'
-import 'sanitize.css/assets.css'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import './global.css'
+import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Next Tab',
-  description: 'A Next.js starter with sensible defaults.',
+  description: '下一个新标签页',
 }
 
 export default function RootLayout({
@@ -17,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }

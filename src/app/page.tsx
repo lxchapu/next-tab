@@ -1,13 +1,17 @@
+import Header from '@/components/header'
+import Clock from '@/components/clock'
+import SearchBox from '@/components/search-box'
+
 export default function Home() {
   return (
-    <main>
-      <h1>Hello Home</h1>
-      <h2>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quod
-        doloremque maxime libero incidunt animi assumenda atque accusamus, nemo,
-        natus molestias eligendi quae iure consequuntur eos asperiores officia,
-        aperiam quaerat.
-      </h2>
-    </main>
+    <div className="min-h-screen bg-gray-100">
+      <div className="flex flex-col">
+        <Header />
+        <Clock />
+        <div className="w-full">
+          <SearchBox />
+        </div>
+      </div>
+    </div>
   )
 }
